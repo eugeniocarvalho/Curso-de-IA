@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import mlrose
 
 peoples = [('Lisboa', 'LIS'),
           ('Madrid', 'MAD'),
@@ -70,7 +69,3 @@ def fitnessFunction(schedule):
     totalPrice += arrival[2]
     
   return totalPrice
-
-fitness = mlrose.CustomFitness(fitnessFunction())
-problem = mlrose.DiscreteOpt(length = 12, fitness_fn = fitness, maximize = False, max_val = 10)
-print(fitnessFunction(fitness))
